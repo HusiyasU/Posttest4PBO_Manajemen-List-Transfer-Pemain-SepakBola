@@ -43,9 +43,9 @@ Tema yang digunakan adalah **Manajemen Transfer & Pinjaman Pemain Sepak Bola**, 
 - **Validasi input** sederhana pada menu.  
 
 ### 🏗️ Pola MVC
-- **Model (`model.Pemain`, `model.Transfer`, `model.Pinjaman`)** - Struktur data pemain.  
-- **Controller (`service.TransferService`)** - Menangani logika CRUD, validasi input, serta fitur pencarian.  
-- **View (`main.MainApp`)** - Entry point program, menampilkan menu, menerima input, dan memanggil service.  
+- **Model (`model`)** → `Pemain` (abstract), `Transfer`, `Pinjaman`, `Kontrak`.  
+- **Controller (`service.TransferService`)** → Menangani logika CRUD, validasi input, serta fitur pencarian.  
+- **View (`main.MainApp`)** → Entry point program, menampilkan menu, menerima input, dan memanggil method dari `TransferService`.
 
 ---
 
@@ -80,7 +80,7 @@ Tema yang digunakan adalah **Manajemen Transfer & Pinjaman Pemain Sepak Bola**, 
 ---
 
 ## 📂 Struktur Package
-<img width="311" height="231" alt="image" src="https://github.com/user-attachments/assets/ee14c780-7c75-4514-a494-a8fd881d8f3c" />
+<img width="313" height="251" alt="image" src="https://github.com/user-attachments/assets/240a7f22-d71b-4ecf-bae2-f9dc0e2d55db" />
 
 
 ---
@@ -105,7 +105,8 @@ Tema yang digunakan adalah **Manajemen Transfer & Pinjaman Pemain Sepak Bola**, 
 ---
 
 ## 🏁 Penutup
-Dengan program ini, manajemen transfer & pinjaman pemain sepak bola dapat dilakukan dengan mudah melalui operasi CRUD berbasis **Java OOP** 🚀
+Dengan program ini, manajemen transfer & pinjaman pemain sepak bola dapat dilakukan dengan mudah melalui operasi CRUD berbasis **Java OOP**. 🚀  
+Program ini juga menerapkan **Abstraction (abstract class + interface)** dan **Polymorphism (Overloading & Overriding)** sesuai ketentuan tugas.  
 
 
 
