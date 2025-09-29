@@ -1,0 +1,5 @@
+model\Transfer.class
+model\Pemain.class
+service\TransferService.class
+main\MainApp.class
+model\Pinjaman.class
