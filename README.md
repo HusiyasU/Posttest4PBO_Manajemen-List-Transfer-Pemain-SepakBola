@@ -33,7 +33,13 @@ Tema yang digunakan adalah **Manajemen Transfer & Pinjaman Pemain Sepak Bola**, 
   - `service` - logika CRUD & fitur pencarian.  
 - **Encapsulation** - semua atribut dibuat `private` dengan getter & setter.  
 - **Inheritance** - `Pemain` sebagai superclass, diturunkan ke `Transfer` dan `Pinjaman`.  
-- **Overriding** - method `toString()` dioverride pada subclass agar output berbeda.  
+- **Overriding** - method `toString()` dioverride pada subclass agar output berbeda.
+- **Polymorphism**:
+  - **Overriding**: method `getDetail()` dioverride di `Transfer` & `Pinjaman`.  
+  - **Overloading**: method `cariTransfer(String)` dan `cariTransfer(String, String)` di `TransferService`.
+- **Abstraction** menggunakan:
+  - `abstract class Pemain` dengan method `getDetail()` yang dioverride di subclass.  
+  - `interface Kontrak` dengan method `jenisKontrak()` yang diimplementasikan oleh `Transfer` & `Pinjaman`.     
 - **Validasi input** sederhana pada menu.  
 
 ### 🏗️ Pola MVC
